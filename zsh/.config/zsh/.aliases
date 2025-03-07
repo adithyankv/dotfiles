@@ -1,0 +1,6 @@
+#aliases
+echo running
+
+#for traversing directory tree
+alias ..='cd ..'
+alias ...='cd ../..'
