@@ -22,3 +22,19 @@ ZSH_HIGHLIGHT_STYLES[alias]='fg=#74b8e8,bold'
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]="fg=#60818f,bold"
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#60818f,bold'
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=#ff392e,bold'
+
+#####################################
+# Tab completion
+#####################################
+#Set case insensitive completion
+
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+
+#####################################
+# Autosuggestions
+#####################################
+
+# Show suggestions for commands you are typing based on history
+source "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=241"
