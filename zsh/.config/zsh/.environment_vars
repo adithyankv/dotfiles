@@ -1,0 +1,3 @@
+# Make all programs use XDG config specifications
+# starship prompt
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml

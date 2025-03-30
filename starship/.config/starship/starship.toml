@@ -1,0 +1,56 @@
+# donot add an empty line between prompts
+add_newline = true
+
+format = """$directory\
+  $fill\
+  $git_branch\
+  $git_status\
+  $cmd_duration\
+  $line_break\
+  $character\
+  """
+
+palette = "custom"
+
+[character]
+# The prompt character just before the text input
+format = "$symbol "
+success_symbol = "[○](success_green)"
+error_symbol = "[󰅙](custom_red)"
+
+[directory]
+read_only = "󰌾 "
+# format = "[](custom_blue)[󰉋 $read_only$path](bg:custom_blue)[](custom_blue)"
+format = "[](custom_blue)[󰉋](bg:custom_blue)[](fg:custom_blue bg:background_gray)[ $read_only$path](bg:background_gray)[](background_gray)"
+
+[fill]
+# The line character that fills the space between left and right prompt
+symbol = "—"
+style = "fg:accent_gray"
+
+[palettes.custom]
+success_green = "#179299"
+custom_red = "#e64553"
+accent_gray = "#313135"
+custom_blue = "#5e81ac"
+background_gray ="#303446"
+custom_orange = "#f2600c"
+custom_purple = "#9b5a8f"
+
+[git_branch]
+format= "[](custom_orange)[󰊢](bg:custom_orange)[](fg:custom_orange bg:background_gray)[ $branch](bg:background_gray)[](background_gray)[—](accent_gray)"
+
+[git_status]
+format="[](custom_red)[](bg:custom_red)[](fg:custom_red bg:background_gray)[ $all_status$ahead_behind](bg:background_gray)[](background_gray)[—](accent_gray)"
+untracked = "󱥸 $count "
+modified = " $count "
+stashed = "󰘓 $count "
+staged = " $count "
+renamed = " $count "
+deleted = "󰧧 $count "
+up_to_date = ""
+ahead = " $count "
+behing = "$count"
+
+[cmd_duration]
+format = "[](custom_purple)[](bg:custom_purple)[](fg:custom_purple bg:background_gray)[ $duration](bg:background_gray)[](background_gray)[—](accent_gray)"

@@ -38,3 +38,9 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=
 # Show suggestions for commands you are typing based on history
 source "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=241"
+
+####################################
+# Shell prompt
+####################################
+
+eval "$(starship init zsh)"
