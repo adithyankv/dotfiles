@@ -3,3 +3,5 @@
 #for traversing directory tree
 alias ..='cd ..'
 alias ...='cd ../..'
+
+alias ls='eza --icons'
