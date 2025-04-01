@@ -50,7 +50,7 @@ renamed = " $count "
 deleted = "󰧧 $count "
 up_to_date = ""
 ahead = " $count "
-behing = "$count"
+behind = "$count"
 
 [cmd_duration]
 format = "[](custom_purple)[](bg:custom_purple)[](fg:custom_purple bg:background_gray)[ $duration](bg:background_gray)[](background_gray)[—](accent_gray)"
