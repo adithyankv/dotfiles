@@ -1,3 +1,8 @@
+#!/bin/sh
+
+# Add necessary folders to path
+export PATH="$HOME/.local/bin:$PATH"
+
 # Make all programs use XDG config specifications
 # starship prompt
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
