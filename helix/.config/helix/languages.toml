@@ -1,0 +1,9 @@
+# Language specific configurations for the editor
+[[language]]
+name = "python"
+language-servers = ["ruff", "pylsp"]
+auto-format = true
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
