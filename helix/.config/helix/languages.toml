@@ -1,7 +1,7 @@
 # Language specific configurations for the editor
 [[language]]
 name = "python"
-language-servers = ["ruff", "pylsp"]
+language-servers = [{ name = "pylsp", except-features = [ "format" ] }, "ruff"]
 auto-format = true
 
 [language-server.ruff]
